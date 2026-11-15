@@ -1,12 +1,13 @@
-# fly.toml app configuration file generated for rvg-sfi63g on 2026-11-15T03:52:23Z
+# fly.toml app configuration file generated for rvg-sfi63g on 2026-11-15T06:46:27Z
 #
 # See https://docs.fly.io/reference/configuration for information about how to use this file.
 #
 
 app = 'rvg-sfi63g'
-primary_region = 'fra'
+primary_region = 'arn'
 
 [build]
+
 [env]
   DATA_DIR = '/data'
   PORT = '8080'
@@ -18,7 +19,7 @@ primary_region = 'fra'
 [http_service]
   internal_port = 8080
   force_https = true
-  auto_stop_machines = 'off'
+  auto_stop_machines = false
   auto_start_machines = true
   min_machines_running = 1
 
